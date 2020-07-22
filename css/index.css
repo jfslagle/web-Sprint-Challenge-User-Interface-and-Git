@@ -28,9 +28,30 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+
+body > .container > header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    font-size: small;
+    /* text-decoration: none; */
+    align-items: flex-end;
 }
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+    background-color: #111111;
+}
+#lambda-black {
+    align-self: flex-start;
+}
+.tippy-top-container {
+    padding-bottom: 5%;;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -67,8 +88,11 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 55%;
     margin: 0 auto;
+    background-color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .top-content {
@@ -143,4 +167,51 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color:indigo;
+}
+#box10 {
+    background-color:dodgerblue;
+}
+
+.LearnMore {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+#allMiddle {
+    display:flex;
+    flex-wrap: wrap;
+}
+#allMiddle > * {
+    flex-basis: 40%;
+    padding: 0.5rem;
 }
